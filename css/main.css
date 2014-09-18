@@ -111,6 +111,59 @@ body {
   background-color: rgba(127, 219, 255, 0.6);
 
   transition: background-color 500ms linear;
+
+  -webkit-animation: slide-up 2000ms ease-out;
+  -ms-animation: slide-up 2000ms ease-out;
+  -moz-animation: slide-up 2000ms ease-out;
+  -o-animation: slide-up 2000ms ease-out;
+  animation: slide-up 2000ms ease-out;
+}
+
+/*click one value, do command d to select same values*/
+
+@keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top:0;
+  }
+}
+
+@-webkit-keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top:0;
+  }
+}
+
+@-ms-keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top:0;
+  }
+}
+
+@-moz-keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top:0;
+  }
+}
+
+@-o-keyframes slide-up{
+  0%{
+    top: 10em;
+  }
+  100%{
+    top:0;
+  }
 }
 
 .chart__bar:hover,
@@ -159,3 +212,6 @@ body {
   top: -7em;
 
 }
+
+/*transitions require user interactions and have only 2 possible states
+animations can play by themselves, have many different states, etc*/
